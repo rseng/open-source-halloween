@@ -1,0 +1,10 @@
+name: trick-or-treat
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - jinja2
+  - pygithub
+  - gitpython
+  - urllib3
+  - pyaml

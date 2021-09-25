@@ -1,0 +1,54 @@
+body { margin: 0; background: #333; }
+
+.title {
+  font-family: 'Gluten', cursive;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+
+gallery { 
+  padding: .5vw;
+  font-size: 0;
+  flex-flow: row wrap; 
+  display: flex;
+}
+gallery div.item { 
+  flex: auto; 
+  width: 200px; 
+  cursor: pointer;
+  margin: .5vw; 
+	transition: transform .15s linear;
+  box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	background: #eb6123;
+	padding: 5px;
+	border-radius: 2px;
+	max-width: 400px;
+}
+
+gallery div.item:nth-child(even) {
+	transform: rotate(2deg)
+}
+gallery div.item:nth-child(odd) {
+	transform: rotate(-4deg)
+}
+gallery div.item:nth-child(3n), gallery div.item:nth-child(7n) {
+	transform: rotate(-7deg)
+}
+
+gallery div.item:hover {
+	box-shadow: 0 3px 6px rgba(0,0,0,.5);
+	transform: scale(1.25);
+	transition: transform .15s linear;
+	z-index: 5;
+}
+
+gallery div.item img { 
+  width: 100%; 
+  height: auto;
+}
+@media screen and (max-width: 400px) {
+  gallery div.item { margin: 0; }
+  gallery { padding: 0; }
+  
+}

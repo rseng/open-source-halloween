@@ -1,0 +1,53 @@
+---
+layout: default
+permalink: /
+---
+
+<!-- Derived from https://codepen.io/edend/pen/LjwXJz thank you!-->
+<gallery>{% for repo in site.data.repos %}{% for filename in repo[1].filenames %}
+<div class="item" data-id="{{ repo[1].full_name }}"><img src="{{ site.baseurl }}/candy/{{ repo[1].full_name }}/{{ filename }}" alt></div>{% endfor %}
+{% endfor %}</gallery>
+
+{% include about-modal.html %}
+{% include detail-modal.html %}
+
+<script src="{{ site.baseurl }}/assets/js/repos.js"></script>
+<script>
+
+var repos = Object()
+
+$(document).ready(function(){
+    $.each(data, function(i, repo){
+      repos[repo['full_name']] = repo
+    })
+})
+
+$(".item").on("click", function (e) {
+    e.preventDefault()
+    var dataid = $(this).attr("data-id")
+    if (dataid in repos) {
+        show_detail_modal(repos[dataid])
+    }
+})
+
+function show_detail_modal(repo) {
+  console.log(repo)
+
+  $("#detail-modal-title").text(repo['full_name'])
+
+  var content = "<p>" + repo["description"] + "</p>" + '<a type="button" style="float:right; margin-right:5px;" class="button btn-sm btn-warning" href="https://github.com/' + repo['full_name'] + '" target="_blank">View on GitHub</a>'
+
+  if (repo["latest_release"] != null) {
+    content += "<p><strong>Latest Release</strong>" + ": " + repo["latest_release"] + "</p>"
+  }
+  content += "<p><strong>Stargazers ⭐️</strong>" + repo['stargazers_count'] + "</p>"
+  content += "<p><strong>Subscribers 😍️</strong>" + repo['subscribers_count'] + "</p>"
+
+  $.each(repo['topics'], function(i, topic){
+     content += "<a href='https://github.com/topics/" + topic + "' target='_blank'><span class='badge badge-warning' style='margin-right:3px'>" + topic + "</span></a>"
+  })
+
+  $("#detail-modal-body").html(content)
+  $('#detail-modal').modal('show');
+}
+</script>

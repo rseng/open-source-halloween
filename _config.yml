@@ -1,0 +1,41 @@
+# Site Settings
+lang: en
+
+title: Open Source Halloween
+
+url: ""
+baseurl: "/open-source-halloween"
+
+# Collections
+collections:
+  candy:
+    output: true
+    permalink: /:collection/:path/
+
+permalink: /:year-:month-:day-:title/
+
+# social media
+twitter: vsoch
+github_org: rseng
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude: 
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+defaults:
+  -
+    scope:
+      path: "_candy"
+      type: "candy"
+    values:
+      layout: candy
+
+markdown: kramdown
+highlighter: rouge
