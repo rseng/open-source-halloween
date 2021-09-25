@@ -8,17 +8,14 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div id="detail-modal-body" class="modal-body" style="color:white">
-            <p>
-            What's an easy way to have fun, and celebrate an open source Halloween? Open source trick or treating, of course! The candy here is our trick or treat bag that we've discovered across the open source landscape. You can participate here too! How does it work?
-          <ul>
-                <li>Generate a candy for your repository with the <a target="_blank" href="https://vsoch.github.io/candy-generator">candy-generator</a></li>
-                <li>Take a screenshot of your candy, tight around the edges</li>
-                <li>Save it somewhere in your repository named "open-source-halloween-2021.png"</li>
-              </ul>
-
-            And that's it! The interface here runs a nightly job to search for these files, meaning that if GitHub has indexed it, it should show up. If you run into any issues with the generator please <a target="_blank" href="https://vsoch.github.io/candy-generator/issues">open an issue</a>, or even better, a pull request with your suggested changes.
-            </p>
+          <div class="modal-body" style="color:white">
+            <div class="row">
+              <div class="col-md-9" id="detail-modal-body"></div>
+              <div class="col-md-3" id="detail-modal-image"></div>
+            </div>
+            <div class="row" style="padding-top:20px">
+              <div class="col-md-12" id="detail-modal-topics"></div>
+            </div>
         </div>
         </div>
       </div>

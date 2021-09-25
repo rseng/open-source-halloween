@@ -73,13 +73,12 @@ class Repo:
             "language",
             "subscribers_count",
             "open_issues",
-            "default_branch",
-            "updated_at",
-            "license"
         ]:
             setattr(self, attr, getattr(github_repo, attr))
 
         self.avatar = github_repo.__dict__['_rawData']['owner']['avatar_url']
+        self.default_branch = github_repo.default_branch
+        self.updated_at = github_repo.updated_at.timestamp()
         self.owner = github_repo.owner.login
         self.topics = github_repo.get_topics()
         self.filenames = list(filenames)

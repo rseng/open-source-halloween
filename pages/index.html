@@ -35,18 +35,33 @@ function show_detail_modal(repo) {
 
   $("#detail-modal-title").text(repo['full_name'])
 
-  var content = "<p>" + repo["description"] + "</p>" + '<a type="button" style="float:right; margin-right:5px;" class="button btn-sm btn-warning" href="https://github.com/' + repo['full_name'] + '" target="_blank">View on GitHub</a>'
+  var image = "<a style='float:right;' href='" + repo['html_url'] +"'><img style='max-width:150px' src='" + repo['avatar'] + "'/></a>"
+  var content = "<p>" + repo["description"] + "</p>" + '<a type="button" style="margin-right:5px;" class="button btn-sm btn-warning" href="https://github.com/' + repo['full_name'] + '" target="_blank">View on GitHub</a>'
+
+  if (repo['homepage'] != null) {
+     content += '<a type="button" style="margin-right:5px;" class="button btn-sm btn-warning" href="' + repo['homepage'] + '" target="_blank">Homepage</a>'
+  }
+  
+  // Link directly to candy
+  content += '<a type="button" style="margin-right:5px;" class="button btn-sm btn-warning" href="' + repo['html_url'] + "/blob/" + repo['default_branch'] + "/" + repo['filenames'][0] + '" target="_blank">View Candy</a><br>'
 
   if (repo["latest_release"] != null) {
-    content += "<p><strong>Latest Release</strong>" + ": " + repo["latest_release"] + "</p>"
+    content += "<br><strong>Latest Release</strong>" + ": " + repo["latest_release"]
   }
-  content += "<p><strong>Stargazers ⭐️</strong>" + repo['stargazers_count'] + "</p>"
-  content += "<p><strong>Subscribers 😍️</strong>" + repo['subscribers_count'] + "</p>"
+  content += "<br><strong>Stargazers ⭐️</strong>" + repo['stargazers_count']
+  content += "<br><strong>Subscribers 😍️</strong>" + repo['subscribers_count'] + "<br>"
 
+  if (repo["language"] != null) {
+    content += "<br><strong>Language</strong>" + ": " + repo["language"]
+  }
+
+  topics = ""
   $.each(repo['topics'], function(i, topic){
-     content += "<a href='https://github.com/topics/" + topic + "' target='_blank'><span class='badge badge-warning' style='margin-right:3px'>" + topic + "</span></a>"
+     topics += "<a href='https://github.com/topics/" + topic + "' target='_blank'><span class='badge badge-warning' style='margin-right:3px'>" + topic + "</span></a>"
   })
 
+  $("#detail-modal-topics").html(topics)
+  $("#detail-modal-image").html(image)
   $("#detail-modal-body").html(content)
   $('#detail-modal').modal('show');
 }

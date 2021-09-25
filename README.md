@@ -2,7 +2,15 @@
 
 ![assets/img/open-source-halloween.png](assets/img/open-source-halloween.png)
 
-What's an easy way to have fun, and celebrate an open source Halloween? Open source trick or treating, of course! The repository and interface here is our trick or treat bag that we've discovered across the open source landscape. You can participate here too! 
+What's an easy way to have fun, and celebrate an open source Halloween? Open source trick or treating, of course! The repository and interface here is our trick or treat bag that we've discovered across the open source landscape. You can add candy for your open source project here too! Each candy can be customized for a specific open source project:
+
+![_candy/singularityhub/sregistry/docs/assets/img/open-source-halloween-2021.png](_candy/singularityhub/sregistry/docs/assets/img/open-source-halloween-2021.png)
+
+And each is explorable:
+
+![assets/img/trick-or-treat.png](assets/img/trick-or-treat.png)
+ 
+This is a low impact way to have some fun with Halloween for your open source project without burdening maintainers.
 
 ## How does it work?
 
