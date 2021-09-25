@@ -15,7 +15,7 @@ gallery {
 }
 gallery div.item { 
   flex: auto; 
-  width: 200px; 
+  width: 350px; 
   cursor: pointer;
   margin: .5vw; 
 	transition: transform .15s linear;
