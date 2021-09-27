@@ -22,6 +22,27 @@ var data =
     "updated_at": 1632617506.0
   },
   {
+    "avatar": "https://avatars.githubusercontent.com/u/2680000?v=4",
+    "data_format": 2,
+    "default_branch": "master",
+    "description": "My blog",
+    "filenames": [
+      "assets/images/open-source-halloween-2021.png"
+    ],
+    "full_name": "tabakg/tabakg.github.io",
+    "homepage": null,
+    "html_url": "https://github.com/tabakg/tabakg.github.io",
+    "language": "JavaScript",
+    "latest_release": null,
+    "open_issues": 0,
+    "owner": "tabakg",
+    "size": 5175,
+    "stargazers_count": 0,
+    "subscribers_count": 2,
+    "topics": [],
+    "updated_at": 1632595291.0
+  },
+  {
     "avatar": "https://avatars.githubusercontent.com/u/85255731?v=4",
     "data_format": 2,
     "default_branch": "main",
@@ -65,6 +86,40 @@ var data =
       "spackage"
     ],
     "updated_at": 1632616601.0
+  },
+  {
+    "avatar": "https://avatars.githubusercontent.com/u/814322?v=4",
+    "data_format": 2,
+    "default_branch": "master",
+    "description": "vsoch",
+    "filenames": [
+      "assets/images/posts/open-source-halloween/open-source-halloween-2021.png"
+    ],
+    "full_name": "vsoch/vsoch.github.io",
+    "homepage": "https://vsoch.github.io",
+    "html_url": "https://github.com/vsoch/vsoch.github.io",
+    "language": "JavaScript",
+    "latest_release": "v1.0",
+    "open_issues": 8,
+    "owner": "vsoch",
+    "size": 192724,
+    "stargazers_count": 9,
+    "subscribers_count": 3,
+    "topics": [
+      "python",
+      "blog",
+      "jekyll",
+      "stanford",
+      "dinosaur",
+      "thinking",
+      "algorithms",
+      "fun",
+      "portfolio",
+      "personal",
+      "vanessasaurus",
+      "v"
+    ],
+    "updated_at": 1632609708.0
   },
   {
     "avatar": "https://avatars.githubusercontent.com/u/14955934?v=4",
