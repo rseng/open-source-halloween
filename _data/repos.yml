@@ -175,6 +175,30 @@ vsoch/docsy-jekyll:
   - docsy
   - template
   updated_at: 1632616680.0
+vsoch/pull-request-action:
+  avatar: https://avatars.githubusercontent.com/u/814322?v=4
+  data_format: 2
+  default_branch: master
+  description: open a pull request when a branch is pushed or updated
+  filenames:
+  - img/open-source-halloween-2021.png
+  full_name: vsoch/pull-request-action
+  homepage: https://github.com/marketplace/actions/pull-request-on-branch-push
+  html_url: https://github.com/vsoch/pull-request-action
+  language: Python
+  latest_release: 1.0.18
+  open_issues: 1
+  owner: vsoch
+  size: 182
+  stargazers_count: 117
+  subscribers_count: 3
+  topics:
+  - github-action
+  - github-actions
+  - pull-request
+  - branches
+  - hacktoberfest
+  updated_at: 1633236051.0
 vsoch/vsoch.github.io:
   avatar: https://avatars.githubusercontent.com/u/814322?v=4
   data_format: 2
