@@ -1,3 +1,22 @@
+autamus/autamus.github.io:
+  avatar: https://avatars.githubusercontent.com/u/73002963?v=4
+  data_format: 2
+  default_branch: main
+  description: Autamus is an Open Source Build System for Scientific Containers
+  filenames:
+  - images/open-source-halloween-2021.png
+  full_name: autamus/autamus.github.io
+  homepage: null
+  html_url: https://github.com/autamus/autamus.github.io
+  language: CSS
+  latest_release: null
+  open_issues: 0
+  owner: autamus
+  size: 2672
+  stargazers_count: 0
+  subscribers_count: 3
+  topics: []
+  updated_at: 1633556272.0
 buildsi/Smeagle:
   avatar: https://avatars.githubusercontent.com/u/85255731?v=4
   data_format: 2
