@@ -64,6 +64,27 @@ var data =
     "updated_at": 1633556272.0
   },
   {
+    "avatar": "https://avatars.githubusercontent.com/u/89811922?v=4",
+    "data_format": 2,
+    "default_branch": "main",
+    "description": "RSE-ops logos and branding! \u2b50\ufe0f",
+    "filenames": [
+      "halloween/open-source-halloween-2021.png"
+    ],
+    "full_name": "rse-ops/logo",
+    "homepage": "",
+    "html_url": "https://github.com/rse-ops/logo",
+    "language": null,
+    "latest_release": null,
+    "open_issues": 1,
+    "owner": "rse-ops",
+    "size": 700,
+    "stargazers_count": 0,
+    "subscribers_count": 1,
+    "topics": [],
+    "updated_at": 1634502115.0
+  },
+  {
     "avatar": "https://avatars.githubusercontent.com/u/85255731?v=4",
     "data_format": 2,
     "default_branch": "main",
